@@ -1,0 +1,60 @@
+.parceiros {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.parceiros h2 {
+  margin-bottom: 60px;
+}
+
+.parceiros ul {
+  padding: 0px 20px;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+}
+
+.parceiros li {
+  display: flex;
+  /*isso vai ser utilizado para centralizar as marcas, usando margin auto na img*/
+  padding: 32px;
+  border-left: 2px solid var(--cor-c2);
+}
+
+.parceiros img {
+  margin: auto;
+}
+
+.parceiros li:first-child,
+.parceiros li:nth-child(5) {
+  /*primeiro e 5° filho sem bordas à esquerda*/
+  border-left: none;
+}
+
+.parceiros li:nth-child(n + 5) {
+  /*a partir do 5° filho*/
+  border-top: 2px solid var(--cor-c2);
+}
+
+@media (max-width: 800px) {
+  .parceiros {
+    padding-bottom: 60px;
+  }
+
+  .parceiros h2 {
+    margin-bottom: 20px;
+  }
+
+  .parceiros ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .parceiros li:nth-child(odd) {
+    border-left: none;
+  }
+
+  .parceiros li:nth-child(n + 3) {
+    border-top: 2px solid var(--cor-c2);
+  }
+}
