@@ -12,3 +12,15 @@ function ativarLink(link) {
 
 links.forEach(ativarLink); // chamada da funcao para cada elemento '.header-menu a'
 /* ------------------------------------------------------------------------------- */
+/* ativar items do orcamento ----------------------------------------------------- */
+const parametros = new URLSearchParams(location.search); // pega os parametros da url
+
+function ativarProduto(parametro) {
+  const elemento = document.getElementById(parametro); // como o parametro é igual ao id, é fácil usar o getElementById 
+  if (elemento) {
+    elemento.checked = true;
+  }
+}
+
+parametros.forEach(ativarProduto)
+
