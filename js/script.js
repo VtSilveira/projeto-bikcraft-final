@@ -1,6 +1,6 @@
+/* deixa o efeito de hover sempre ativo quando na página selecionada ------------- */
 const links = document.querySelectorAll('.header-menu a');
 
-/* deixa o efeito de hover sempre ativo quando na página selecionada ------------- */
 function ativarLink(link) {
   const url = location.href; // pega a url atual
   const href = link.href; // o link atual do forEach
@@ -22,5 +22,24 @@ function ativarProduto(parametro) {
   }
 }
 
-parametros.forEach(ativarProduto)
+parametros.forEach(ativarProduto);
+/* ------------------------------------------------------------------------------- */
+/* perguntas frequentes ---------------------------------------------------------- */
+const perguntas = document.querySelectorAll('.perguntas button');
 
+function ativarPergunta(event) {
+  const pergunta = event.currentTarget;
+  const controls = pergunta.getAttribute("aria-controls");
+  const resposta = document.getElementById(controls);
+  pergunta.setAttribute('aria-expanded', resposta.classList.toggle("ativa"));
+}
+
+function eventosPerguntas(pergunta) {
+  pergunta.addEventListener('click', ativarPergunta);
+}
+
+perguntas.forEach(eventosPerguntas);
+
+
+
+/* ------------------------------------------------------------------------------- */
