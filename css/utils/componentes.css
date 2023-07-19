@@ -10,7 +10,7 @@
 .botao {
   padding: 16px 32px;
   display: inline-block;
-  background: linear-gradient(#FFBF00, #F2A50C);
+  background: linear-gradient(#ffbf00, #f2a50c);
   border-radius: 4px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
@@ -22,7 +22,7 @@
 }
 
 .botao:hover {
-  background: linear-gradient(#FFB60d, #e59317);
+  background: linear-gradient(#ffb60d, #e59317);
 }
 
 .botao.secundario {
@@ -46,7 +46,7 @@
   height: 10px;
   margin-left: 12px;
   background: url("../../img/icones/seta.svg");
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .botao.seta:hover::after {
@@ -87,7 +87,7 @@
 }
 
 .titulo {
-  background: url('../../img/dec/top-right.svg') no-repeat top right 20px;
+  background: url("../../img/dec/top-right.svg") no-repeat top right 20px;
 }
 
 .titulo p {

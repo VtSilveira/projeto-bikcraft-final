@@ -15,7 +15,8 @@
 .depoimentos-conteudo {
   padding: 40px 30px 80px 80px;
   align-self: end;
-  background: url('../../img/dec/bottom-right-p.svg') no-repeat bottom 40px right 40px;
+  background: url("../../img/dec/bottom-right-p.svg") no-repeat bottom 40px
+    right 40px;
 }
 
 .depoimentos-conteudo p {
@@ -27,7 +28,8 @@
   position: relative;
 }
 
-.depoimentos-conteudo p::before, .depoimentos-conteudo p::after {
+.depoimentos-conteudo p::before,
+.depoimentos-conteudo p::after {
   font-size: 5rem;
   color: var(--cor-p2);
   position: absolute;
@@ -63,5 +65,3 @@
     max-height: 200px;
   }
 }
-
-
